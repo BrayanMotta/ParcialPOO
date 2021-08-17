@@ -1,0 +1,35 @@
+﻿@model List<ParcialPOO.Web.Models.ParcialPOOs>
+@{
+    ViewBag.Title = "Tabla";
+}
+
+<h2>Plan de pago</h2>
+<hr />
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Cuota #</th>
+            <th>Abono a intereses</th>
+            <th>Abono a capital</th>
+            <th>Cuota mensual sin seguro</th>
+            <th>Valor del seguro</th>
+            <th>Cuota mensual + seguro</th>
+            <th>Saldo</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>@item.NroCuotas</td>
+            <td>@item.AbonoInte</td>
+            <td>@item.AbonoCapi</td>
+            <td>@item.CuotaMensual</td>
+            <td>@item.Seguro</td>
+            <td>@item.CuotaSeguro</td>
+            <td>@item.NuevoSaldo</td>
+        </tr>
+        }
+        
+    </tbody>
+</table>

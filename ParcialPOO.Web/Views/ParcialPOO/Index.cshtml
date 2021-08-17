@@ -1,0 +1,41 @@
+﻿@model ParcialPOO.Web.Models.ParcialPOOs
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Simulación de credito</h2>
+
+<form method="post" action="/ParcialPOO/Index">
+    
+    <hr />
+
+    @Html.DisplayNameFor(m => m.ValorPresta)
+    @Html.EditorFor(m => m.ValorPresta, new { htmlAttribute = new { @class = "form-control" } })
+    @Html.ValidationMessageFor(m => m.ValorPresta, "", new { @class = "text-danger" })
+
+    <hr />
+
+    @Html.DisplayNameFor(m => m.Cuotas)
+    @Html.EditorFor(m => m.Cuotas, new { htmlAttribute = new { @class = "form-control" } })
+    @Html.ValidationMessageFor(m => m.Cuotas, "", new { @class = "text-danger" })
+
+    <hr />
+
+    @Html.DisplayNameFor(m => m.Tasa)
+    @Html.EditorFor(m => m.Tasa, new { htmlAttribute = new { @class = "form-control" } })
+    @Html.ValidationMessageFor(m => m.Tasa, "", new { @class = "text-danger" })
+
+    <hr />
+
+    @Html.DisplayNameFor(m => m.Seguro)
+    @Html.EditorFor(m => m.Seguro, new { htmlAttribute = new { @class = "form-control" } })
+    @Html.ValidationMessageFor(m => m.Seguro, "", new { @class = "text-danger" })
+
+    <hr />
+    <input type="submit" class="btn btn-primary" value="Calcular" />
+
+
+</form>
+
+
