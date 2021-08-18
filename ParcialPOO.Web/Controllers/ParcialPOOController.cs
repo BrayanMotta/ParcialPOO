@@ -36,7 +36,8 @@ namespace ParcialPOO.Web.Controllers
             if (!ModelState.IsValid)
                 return View(parcialPOOs);
 
-           
+            dato = new List<ParcialPOOs>();
+
 
             var valorpresta = parcialPOOs.ValorPresta;
             var nrocuotas = parcialPOOs.Cuotas;

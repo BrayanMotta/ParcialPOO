@@ -10,19 +10,19 @@ namespace ParcialPOO.Web.Models
     {
         
 
-        [Display(Name = "Valor de prestamo")]
+        [Display(Name = "Valor de prestamo: ")]
         [Required(ErrorMessage = "Este campo es requerido")]
         public int ValorPresta { get; set; }
 
-        [Display(Name = "Numero de cuotas")]
+        [Display(Name = "Numero de cuotas: ")]
         [Required(ErrorMessage = "Este campo es requerido")]
         public double Cuotas { get; set; }
 
-        [Display(Name = "Tasa de interes")]
+        [Display(Name = "Tasa de interes: ")]
         [Required(ErrorMessage = "Este campo es requerido")]
         public double Tasa { get; set; }
 
-        [Display(Name = "Seguro de vida asociado")]
+        [Display(Name = "Valor del seguro de vida: ")]
         [Required(ErrorMessage = "Este campo es requerido")]
         public double Seguro { get; set; }
 
